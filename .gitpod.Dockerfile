@@ -9,3 +9,4 @@ RUN echo "deb https://downloads.apache.org/cassandra/debian 311x main" | sudo te
 RUN curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -
 RUN sudo apt-get update
 RUN sudo apt-get install cassandra -y
+RUN sudo service cassandra start
