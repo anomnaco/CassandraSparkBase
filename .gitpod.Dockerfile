@@ -8,4 +8,4 @@ FROM gitpod/workspace-full
 RUN echo "deb https://downloads.apache.org/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
 RUN curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -
 RUN sudo apt-get update
-RUN sudo apt-get install cassandra
+RUN sudo apt-get install cassandra -y
