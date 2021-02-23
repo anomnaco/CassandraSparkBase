@@ -16,4 +16,4 @@ RUN export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 RUN cassandra
 
 # Create folders
-RUN sudo mkdir -p $dir && chown -R gitpod:gitpod /var/lib/cassandra && chmod 777 /var/lib/cassandra
+RUN sudo mkdir -p /var/lib/cassandra && chown -R gitpod:gitpod /var/lib/cassandra && chmod 777 /var/lib/cassandra
