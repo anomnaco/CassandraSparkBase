@@ -23,5 +23,5 @@ RUN (for dir in /var/lib/cassandra \
                 /var/log/cassandra \
                 /var/log/spark \
                 /config ; do \
-        mkdir -p $dir && chown -R dse:dse $dir && chmod 777 $dir ; \
+        mkdir -p $dir && chown -R gitpod:gitpod $dir && chmod 777 $dir ; \
     done )
