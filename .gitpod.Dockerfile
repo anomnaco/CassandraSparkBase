@@ -13,7 +13,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install cassandra -y
 RUN sudo service cassandra start
 RUN export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
-RUN cassandra
+RUN sudo cassandra
 
 # Create folders
-RUN sudo mkdir -p /var/lib/cassandra && chown -R gitpod:gitpod /var/lib/cassandra && chmod 777 /var/lib/cassandra
+RUN sudo mkdir -p /var/lib/cassandra
