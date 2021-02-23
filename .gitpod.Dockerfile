@@ -16,7 +16,7 @@ RUN export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 RUN cassandra
 
 # Create folders
-RUN (for dir in /var/lib/cassandra \
+RUN sudo (for dir in /var/lib/cassandra \
                 /var/lib/spark \
                 /var/lib/dsefs \
                 /var/lib/datastax-agent \
