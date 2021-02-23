@@ -16,12 +16,4 @@ RUN export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 RUN cassandra
 
 # Create folders
-RUN sudo (for dir in /var/lib/cassandra \
-                /var/lib/spark \
-                /var/lib/dsefs \
-                /var/lib/datastax-agent \
-                /var/log/cassandra \
-                /var/log/spark \
-                /config ; do \
-        mkdir -p $dir && chown -R gitpod:gitpod $dir && chmod 777 $dir ; \
-    done )
+RUN sudo mkdir -p $dir && chown -R gitpod:gitpod /var/lib/cassandra && chmod 777 /var/lib/cassandra
