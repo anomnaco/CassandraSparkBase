@@ -17,3 +17,7 @@ RUN cassandra -R
 
 # Create folders
 RUN sudo mkdir -p /var/lib/cassandra
+RUN sudo mkdir -p /var/lib/cassandra/data
+RUN sudo mkdir -p /var/log/cassandra
+RUN sudo chown -R  $USER: $GROUP /var/log/cassandra
+RUN sudo chown -R  $USER: $GROUP /var/lib/cassandra
